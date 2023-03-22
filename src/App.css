@@ -1,5 +1,366 @@
+
+@font-face {
+  font-family: 'Enchanted';
+  src: local('Enchanted'),url(./Fonts/Enchanted.otf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'vinque_rg';
+  src: local('vinque_rg'), url(./Fonts/vinque_rg.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SEVESBRG';
+  src: local('SEVESBRG'), url(./Fonts/SEVESBRG.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'MoriaCitadel';
+  src: local('MoriaCitadel'), url(./Fonts/MoriaCitadel.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'Wonderbar_Demo';
+  src: local('Wonderbar_Demo'), url(./Fonts/Wonderbar_Demo.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MagicSchoolOne';
+  src: local('MagicSchoolOne'), url(./Fonts/MagicSchoolOne.ttf) format('truetype');
+}
+
 main {
   text-align: center;
   vertical-align: center;
-  line-height: 100vh
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  background-color:black;
+}
+
+body {
+  background-color:black;
+  
+}
+
+#App {
+  text-align: center;
+  vertical-align: center;
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  background-color:black;
+}
+
+#Banner {
+  font-family: MoriaCitadel, Arial, Enchanted;
+  font-weight: black;
+
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:black;
+  width: 100%;
+  min-height:"";
+  max-height:"";
+  border: var(--border) ;
+  text-align: center;
+  opacity: 1;
+  padding:10px;  
+}
+
+#AudioPlayer2 {
+  background-image:url('https://empirefable.magwebdesigns.net/images/scroll-horizontal-final.png');
+  position:fixed;
+  left:10px;
+  top:500px;
+  z-index:6;
+  margin-bottom: ;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:80px;
+  width: 100px;
+  min-height:"";
+  max-height:"";
+  border:0px ;
+  text-align: left;
+  opacity: 1;
+  padding-left:20px;  
+  line-height: 1.5vh; 
+}
+
+#AudioPlayer3 {
+  background-image:url('https://empirefable.magwebdesigns.net/images/scroll-horizontal-final.png');
+  position:fixed;
+  left:300px;
+  top:500px;
+  z-index:6;
+  margin-bottom: ;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:80px;
+  width: 100px;
+  min-height:"";
+  max-height:"";
+  border:0px ;
+  text-align: left;
+  opacity: 1;
+  padding-left:20px;  
+  line-height: 1.5vh; 
+}
+
+#LeftNav {
+  z-index:2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 400px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: "";
+  max-height: "";
+  border: var(--border);
+  text-align: center;
+  opacity: 1;
+  padding: 10px;
+}
+
+#NavOceanDeep{
+  font-family: MoriaCitadel, Arial, Enchanted;
+  font-weight: black;
+  z-index:4;
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: "";
+  max-height: "";
+  border: var(--border);
+  text-align: left;
+  opacity: 1;
+  padding: 5px;
+  padding-left:10p
+}
+
+#RoutingNav {
+  z-index:2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 400px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: "";
+  max-height: "";
+  border: var(--border);
+  text-align: center;
+  opacity: 1;
+  padding: 10px;
+}
+
+.ocean-deep-location {
+  z-index:-1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 400px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  max-width:1800px;
+  min-height: "";
+  max-height: "";
+  border: var(--border);
+  text-align: center;
+  opacity: 1;
+  padding: 10px;
+}
+
+#LinkContainer {
+  line-height: 3vh; 
+  z-index:2;
+  border-radius:0px;
+  color:black;
+  border: 0px solid;
+  background: rgba(163, 119, 75, 0.1);
+  padding:5px;
+  padding-left: 25px;
+  background-image:url('https://empirefable.magwebdesigns.net/images/scroll-horizontal-final.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  width:140px;
+
+  }
+
+
+#CanvasContainer {
+  border: 1px solid;
+  border-radius: 25px;
+  color:white;
+  background-color:grey;
+  background-image:url('');
+  opacity: 1;
+  padding:0px;
+  width:100%;
+}
+
+#canvas {
+  border: 1px solid;
+  border-radius: 25px;
+  background-color:black;
+  width:100%;
+  
+}
+
+#IframeContainer {
+  background-size:100% 100%;
+  width:100%;
+  position:fixed;
+  left:0px;
+  top:0px;
+  z-index:0;
+  border-radius: 0px;
+  margin:auto;
+  overflow: hidden;
+  padding:20px;
+}
+
+#Sitepal-Iframe {
+  z-index:2;
+  border-radius: 25px;
+  margin:auto;
+  height:220px;
+  overflow: hidden;
+}
+
+#GPT3API {
+  z-index:2;
+  border: 0px solid;
+  border-radius: 25px;
+  color:white;
+  background-color:grey;
+  background-image:url('');
+  opacity: .95;
+  padding:10px;
+  
+}
+
+#background {
+  
+  background-image:url("https://cdn.discordapp.com/attachments/1061677003587190788/1077639286280704133/C1_dwarven_style_fantasy_rich_villa_with_many_windows_top_down__820962e6-80fb-4971-af2e-f1fdad8fec87.png");
+  background-size:100% 100%;
+  margin:auto;
+  background-repeat:no-repeat;
+  border:1px solid;
+
+  
+}
+
+#BackgroundImage {
+  z-index:1;
+  background-size:100% 100%;
+  background-color:black;
+  width:100%;
+  min-height:800px;
+  margin:auto;
+  background-repeat:no-repeat;
+  border:0px solid;
+
+  
+}
+
+#ScrollingText{
+    font-family: MoriaCitadel, Arial, Enchanted;
+    font-weight: black;
+    font-size:12px;
+    z-index:1;
+    border: 0px solid;
+    position:fixed;
+    opacity:1;
+    border-radius:20px;
+    color:black;
+    background: rgba(211, 211, 211, 0.2);
+    padding: 15px;
+    padding-left: 20px;
+    top: 100px;
+    left: 150px;
+    min-width: 250px;
+    min-height:600px;
+    max-width: 550px;
+    max-height:600px;
+        
+}
+
+#marquee{
+    font-family: MoriaCitadel, Arial, Enchanted;
+    font-weight: black;
+    font-size: 12px;
+    line-height:3vh;
+    z-index:1;
+    border: 0px solid;
+    opacity:1;
+    border-radius:20px;
+    color:black;
+    background: rgba(211, 211, 211, 0.2);
+    padding: 10px;
+    top: 100px;
+    left: 150px;
+    min-width: 250px;
+    min-height:600px;
+    max-width: 550px;
+    max-height:600px;
+        
+}
+
+#Footer{
+    z-index:5;
+    float:bottom;
+    position:fixed;
+    top:750px;
+    left:50px;
+    border: 0px solid;
+    opacity:1;
+    border-radius:20px;
+    color:black;
+    background: rgba(211, 211, 211, 0.2);
+    padding: 10px;
+        
+}
+
+#game-container {  
+  background-image:url("");
+  background-size:100% 100%;
+  margin:auto;
+  background-repeat:no-repeat;
+  border:1px solid;  
+}
+
+.diagram-component {
+  width: 400px;
+  height: 400px;
+  border: solid 1px black;
+  background-color: white;
 }
