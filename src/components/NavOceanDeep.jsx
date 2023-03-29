@@ -16,6 +16,9 @@ export default function NavOceanDeep() {
     <BrowserRouter>
       <div id={id} class={id}>
         <div id="LinkContainer" style={{}}>
+          <Link to="/"><h3>REGION MAP</h3></Link>
+        </div>
+        <div id="LinkContainer" style={{}}>
           <Link to="/oceandeep"><h3>OCEAN DEEP</h3></Link>
         </div>
         <div id="LinkContainer" style={{}}>

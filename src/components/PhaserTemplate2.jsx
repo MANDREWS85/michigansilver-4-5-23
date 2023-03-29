@@ -50,7 +50,7 @@ export default function PhaserTemplate2() {
 
   return (
     <div id="background"> 
-      <h3>BACKGROUND DIV</h3>
+      <h3>Phaser template 2</h3>
       <div id="game-container" />
     </div>
   );

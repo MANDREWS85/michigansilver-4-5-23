@@ -88,7 +88,7 @@ export default function PhaserTemplate3() {
 
   return (
     <div id="background"> 
-      <h3>BACKGROUND DIV</h3>
+      <h3>Phaser Template 3</h3>
       <div id="game-container" />
       <div id="status"><h3>STATUS</h3></div>
     </div>

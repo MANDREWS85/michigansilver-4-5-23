@@ -49,7 +49,9 @@ export default function PhaserTemplate4() {
       const circle = this.add.circle(pointer.x, pointer.y, 5, 0x000000);
 
       // create hot spot area
-      const hotSpot = this.add.rectangle(400, 300, 200, 100, 0xff0000).setInteractive().setAlpha(0.25);
+      const hotSpot = this.add.rectangle(400, 300, 50, 50, 0xff0000).setInteractive().setAlpha(0.25);
+      // create hot spot area
+      const hotSpot2 = this.add.rectangle(200, 300, 50, 50, 0xff0000).setInteractive().setAlpha(0.25);
 
       // add collision detection
       this.input.on('pointermove', function (pointer) {
@@ -70,13 +72,7 @@ export default function PhaserTemplate4() {
         circle.x = pointer.x;
         circle.y = pointer.y;
         //document.getElementById("status").innerHTML = pointer.x + pointer.y;
-      });
-
-
-
-
-    
-      
+      });    
     }
 
     function update() {
@@ -87,7 +83,7 @@ export default function PhaserTemplate4() {
 
   return (
     <div id="background"> 
-      <h3>BACKGROUND DIV</h3>
+      <h3>Phaser Template 4</h3>
       <div id="game-container" />
       <div id="status"><h3>STATUS</h3></div>
     </div>

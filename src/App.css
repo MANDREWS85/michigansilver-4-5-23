@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: 'Enchanted';
-  src: local('Enchanted'),url(./Fonts/Enchanted.otf) format('truetype');
+  font-family: 'BarbarianNS';
+  src: local('BarbarianNS'),url(./Fonts/BarbarianNS.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -38,7 +38,10 @@ main {
   horizontal-align: center;
   margin:auto;
   width:100%;
+  background:no-repeat;
+  background-size:100% 100%;
   background-color:black;
+  background-image:url('https://cutewallpaper.org/21/space-gif-wallpaper/Space-Nebula-4k-Live-Wallpaper-GIF.gif')
 }
 
 body {
@@ -57,6 +60,25 @@ body {
 }
 
 #Banner {
+  font-family: BarbarianNS, Arial, Enchanted;
+  font-weight:red;
+  color:red;
+
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:black;
+  width: 100%;
+  min-height:"";
+  max-height:"";
+  border: var(--border) ;
+  text-align: center;
+  opacity: 1;
+  padding:10px;  
+}
+
+#OverlayDiv {
   font-family: MoriaCitadel, Arial, Enchanted;
   font-weight: black;
 
@@ -238,14 +260,14 @@ body {
 #IframeContainer {
   background-size:100% 100%;
   width:100%;
-  position:fixed;
+  position:relative;
   left:0px;
   top:0px;
   z-index:0;
   border-radius: 0px;
   margin:auto;
   overflow: hidden;
-  padding:20px;
+  padding:0px;
 }
 
 #Sitepal-Iframe {
@@ -364,3 +386,90 @@ body {
   border: solid 1px black;
   background-color: white;
 }
+
+
+.ThreeColumnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ThreeColumnContainer > * {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .ThreeColumnContainer {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .ThreeColumnContainer > * {
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .TwoColumnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .TwoColumnContainer > * {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .TwoColumnContainer {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .TwoColumnContainer > * {
+      flex-basis: auto;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .OneColumnContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width:100%;
+  }
+
+  .OneColumnContainer > * {
+    
+    margin-bottom: 20px;
+    flex-basis: 99%;
+  }
+
+  
+  /* Add styles to make child elements responsive */
+  .ChildContainer {
+    color:blue;
+    font-family: BarbarianNS, Arial, Enchanted;
+    text-align: center;
+    padding: 5px;
+    
+    background: rgba(104,0,0, 0.5);
+    border: 5px solid blue;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  @media (min-width: 769px) {
+    .ChildContainer {
+      color:blue;
+      font-family: BarbarianNS, Arial, Enchanted;
+      width: 30%;
+    }
+  }
