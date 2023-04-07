@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 
 
 import Phaser from 'phaser';
-import './App.css';
+//import './App.css';
+import './App2.css';
+
 import Banner from './components/Banner.jsx';
 import LeftNav from './components/LeftNav.jsx';
 import NavOceanDeep from './components/NavOceanDeep.jsx';
@@ -52,6 +54,7 @@ import WharfSlums from './OceanDeep/WharfSlums.jsx';
 import OceanDeep from './OceanDeep/OceanDeep.jsx';
 
 import WebsiteTemplate from './components/WebsiteTemplate.jsx';
+import WebsiteTemplate2 from './components/WebsiteTemplate2.jsx';
 
 
 
@@ -60,8 +63,8 @@ export default function App() {
 
   
   return (
-    <main id={id}>
-      <WebsiteTemplate />
+    <main>
+      <WebsiteTemplate2 />
       
     </main>
   )

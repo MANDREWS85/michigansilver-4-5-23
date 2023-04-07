@@ -31,6 +31,22 @@
   src: local('MagicSchoolOne'), url(./Fonts/MagicSchoolOne.ttf) format('truetype');
 }
 
+/* Anchors styles */
+a {
+  color: black; /* Set default color for anchors */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Anchors on hover */
+a:hover {
+  color: black; /* Set color to black on hover */
+}
+
+/* Anchors visited */
+a:visited {
+  color: black; /* Set color to black for visited anchors */
+}
+
 main {
   text-align: center;
   vertical-align: center;
@@ -38,11 +54,16 @@ main {
   horizontal-align: center;
   margin:auto;
   width:100%;
-  background:no-repeat;
-  background-size:100% 100%;
+  background:repeat;
+  background-size:contain;
   background-color:black;
-  background-image:url('https://cutewallpaper.org/21/space-gif-wallpaper/Space-Nebula-4k-Live-Wallpaper-GIF.gif')
+  background-image:url('https://media.tenor.com/snDaLwK-MFYAAAAd/gold-3d.gif')
 }
+/*https://media4.giphy.com/media/4k7v3eAm5fVJu/giphy.gif?cid=ecf05e473pq6n425p1lp1eaw9ikvr4diw1m8eoffywf1g1mf&rid=giphy.gif&ct=g*/
+
+/*https://media4.giphy.com/media/L1QMTl9ggmYGoCu7oj/giphy.gif?cid=ecf05e47w93lbktcoktdoz7agtejjrdc5mmu390o87w0q2rg&rid=giphy.gif&ct=g*/
+
+/*https://media0.giphy.com/media/10rtoKqcDukJgc/giphy.gif?cid=ecf05e47k32byjhrrg6n0l9garjgbcef0deehkbnzfcpbmf2&rid=giphy.gif&ct=g*/
 
 body {
   background-color:black;
@@ -59,29 +80,70 @@ body {
   background-color:black;
 }
 
-#Banner {
-  font-family: BarbarianNS, Arial, Enchanted;
-  font-weight:red;
-  color:red;
+#text-container {
+  border-radius: 25px;
+  text-align: left;
+  vertical-align: center;
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  padding:10px;
+  text-justify: auto;
+  background: rgba(163, 119, 75, 0.1);
+}
 
+#title-container {
+  border-radius: 25px;
+  text-align: left;
+  vertical-align: center;
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  padding:10px;
+  text-justify: auto;
+  background: rgba(192, 192, 192, .5);
+  border:1px solid;
+}
+
+#description-container {
+  border-radius: 25px;
+  text-align: left;
+  vertical-align: center;
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  margin-top:10px;
+  padding:10px;
+  text-justify: auto;
+  background: rgba(192, 192, 192, .5);
+  border:1px solid;
+
+}
+
+#Banner {
+  font-family:  Arial, Enchanted;
+  font-weight:#white;
+  color:white;
+  background-image:url(https://bullion.magwebdesigns.net/wp/wp-content/uploads/2023/04/michigansilvercom-low-resolution-logo-black-on-transparent-background.png);
   margin-bottom: 0px;
   border-radius: 0px;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color:black;
+  background-size: cover;
+  background-color:white;
   width: 100%;
-  min-height:"";
-  max-height:"";
   border: var(--border) ;
   text-align: center;
-  opacity: 1;
+  opacity: .5;
   padding:10px;  
 }
 
 #OverlayDiv {
   font-family: MoriaCitadel, Arial, Enchanted;
-  font-weight: black;
-
+  font-weight: white;
+  color:white;
   margin-bottom: 0px;
   border-radius: 0px;
   background-repeat: no-repeat;
@@ -186,7 +248,6 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100px;
   height: 400px;
   margin-bottom: 25px;
   border-radius: 25px;
@@ -195,10 +256,11 @@ body {
   width: 100%;
   min-height: "";
   max-height: "";
-  border: var(--border);
+  border: 10px;
   text-align: center;
   opacity: 1;
   padding: 10px;
+  color:white;
 }
 
 .ocean-deep-location {
@@ -225,12 +287,13 @@ body {
   line-height: 3vh; 
   z-index:2;
   border-radius:0px;
-  color:black;
-  border: 0px solid;
+  color:gold;
+  border: 1px solid;
+  border-radius:25px;
   background: rgba(163, 119, 75, 0.1);
   padding:5px;
   padding-left: 25px;
-  background-image:url('https://empirefable.magwebdesigns.net/images/scroll-horizontal-final.png');
+  background-image:url('');
   background-size:100% 100%;
   background-repeat:no-repeat;
   width:140px;
@@ -304,12 +367,12 @@ body {
 #BackgroundImage {
   z-index:1;
   background-size:100% 100%;
-  background-color:black;
   width:100%;
   min-height:800px;
   margin:auto;
   background-repeat:no-repeat;
   border:0px solid;
+  background-size:fill;
 
   
 }
@@ -393,6 +456,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   .ThreeColumnContainer > * {
@@ -458,7 +522,6 @@ body {
   
   .OneColumnContainer {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
@@ -466,7 +529,7 @@ body {
   }
 
   .OneColumnContainer > * {
-    
+    width:100%;
     margin-bottom: 20px;
     flex-basis: 99%;
   }
@@ -474,22 +537,78 @@ body {
   
   /* Add styles to make child elements responsive */
   .ChildContainer {
-    color:blue;
-    font-family: BarbarianNS, Arial, Enchanted;
+    font-family: , Arial, Enchanted;
     text-align: center;
-    padding: 5px;
-    
+    padding: 0px;
+    background-size:cover;
     background: rgba(104,0,0, 0.5);
-    border: 5px solid blue;
+    border: 1px solid black;
     border-radius: 20px;
     box-sizing: border-box;
     width: 100%;
+    height:100%;
+    overflow:hidden;
+    
+    
+    
   }
 
   @media (min-width: 769px) {
     .ChildContainer {
-      color:blue;
+      color:black;
       font-family: BarbarianNS, Arial, Enchanted;
-      width: 30%;
+      width: 100%;
+      height:100%;
     }
   }
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  border-radius:20px;
+  background-color: silver;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width:80px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  background: rgba(211, 211, 211, 0.2);
+  border-radius:20px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  background: rgba(211, 211, 211, 0.2);
+  border-radius:20px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  background: rgba(211, 211, 211, 0.2);
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: silver;}

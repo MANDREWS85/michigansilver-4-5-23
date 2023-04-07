@@ -1,11 +1,11 @@
-export default function Banner({linkTitle,text,link,imageLink}) {
+export default function Banner({title,text,link,src}) {
 
   const id = "Banner";
   
   return(
     <div id={id} >
       <div></div>
-      <a href={link} target="_blank" style={{backgroundImage:"url(" + imageLink + ")"}}> <h1>{linkTitle}</h1> </a>
+      <a href={link} target="_blank" style={{backgroundImage:"url(" + src + ")"}}> <h1>{title}</h1> </a>
       <h3>{text}</h3>
     </div>   
   ); 

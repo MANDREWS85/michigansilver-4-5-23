@@ -1,0 +1,99 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 5vh;  
+  horizontal-align: center;
+  margin:auto;
+  width:100%;
+  background:no-repeat;
+  background-size:100% 100%;
+  background-color:black;
+  background-image:url('https://media.tenor.com/snDaLwK-MFYAAAAd/gold-3d.gif');
+  background-size: cover;
+
+}
+
+
+/* Container styles */
+.Container {
+  display: flex;
+  flex-wrap: wrap; /* Add flex-wrap property to wrap child divs on mobile */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+.BannerContainer {
+  border-radius:20px;
+  vertical-align:center;
+  horizontal-align:center;
+  flex: 1;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-color:silver;
+  background-image:url('https://media.tenor.com/snDaLwK-MFYAAAAd/gold-3d.gif');
+  min-height:400px;
+  max-height:6Child00px;
+  padding: 20px;
+  margin:10px;
+}
+
+/* Child div styles */
+.ChildContainer {
+  vertical-align:center;
+  horizontal-align:center;
+  flex: 1;
+  padding: 20px;
+  background-size: contain;
+  background-position: center center;
+  min-height:300px;
+  max-height:300px;
+  padding: 20px;
+  margin:10px;
+}
+
+.BackgroundImage {
+  vertical-align:center;
+  horizontal-align:center;
+  background-position:relative;
+  background-size: contain;
+  padding: 20px;
+  
+}
+
+/* Child div background images */
+.ChildContainer1 {
+  background-image: url('image1.jpg');
+}
+
+.ChildContainer2 {
+  background-image: url('image2.jpg');
+}
+
+.ChildContainer3 {
+  background-image: url('image3.jpg');
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column; /* Change flex direction to column on mobile */
+  }
+
+  .ChildContainer {
+    flex: none; /* Reset flex property to none to make child divs stack on mobile */
+    width: 100%; /* Set child divs to 100% width on mobile */
+  }
+}
+
+.description-container {
+  color:black;
+  
+}
+
+.title-container {
+  color:black;
+
+  
+}
