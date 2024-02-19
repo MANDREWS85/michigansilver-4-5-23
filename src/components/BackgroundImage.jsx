@@ -1,4 +1,11 @@
-export default function BackgroundImage({ src, title, description, link, width, height }) {
+export default function BackgroundImage({
+  src,
+  title,
+  description,
+  link,
+  width,
+  height,
+}) {
   const id = "BackgroundImage";
   return (
     <div
@@ -12,22 +19,18 @@ export default function BackgroundImage({ src, title, description, link, width, 
         width: "100%",
         height: "100%",
         margin: "auto",
+        padding: "10px",
         overflow: "hidden",
-        backgroundSize: "contain",
+
+        backgroundSize: "100%",
       }}
     >
       <div id="title-container" className="title-container">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <h3>{title}</h3>
         </a>
+        <p>{description}</p>
       </div>
     </div>
   );
 }
-
-
-
-
-
-
-
