@@ -1,14 +1,18 @@
 import IframeContainer from "../components/IframeContainer.jsx";
 import MichiganSilverRoutingNav from "../components/MichiganSilverRoutingNav.jsx";
+import RoutingNav from "../components/RoutingNav.jsx";
+import TopNavFixedPosition from "../components/TopNavFixedPosition.jsx";
+
 import BackgroundImage from "../components/BackgroundImage.jsx";
 import ScrollingText from "../components/ScrollingText.jsx";
 import Banner from "../components/Banner.jsx";
+import TagCloud from "../components/TagCloud.jsx";
 
 export default function WebsiteTemplate2() {
   const id = "WebsiteTemplate2";
   return (
     <div id={id} class={id}>
-      {/*<MichiganSilverRoutingNav />*/}
+      
       {/* https://bullion.magwebdesigns.net/wp/wp-content/uploads/2023/04/michigansilvercom-low-resolution-logo-black-on-transparent-background.png */}
 
       <div
@@ -19,6 +23,7 @@ export default function WebsiteTemplate2() {
           justifyContent: "center",
         }}
       >
+           
         <div id="BannerContainer" class="BannerContainer">
           <img
             src="https://bullion.magwebdesigns.net/wp/wp-content/uploads/2023/04/michigansilvercom-low-resolution-logo-black-on-transparent-background.png"
@@ -34,8 +39,25 @@ export default function WebsiteTemplate2() {
             }}
           />
         </div>
+
+        
+              
       </div>
 
+
+
+      
+
+      <MichiganSilverRoutingNav />
+
+      <div id="Container" class="Container">
+        <a href=""></a>
+
+      </div>
+
+
+      
+      
       <div id="Container" class="Container">
         <div id="ChildContainer" class="ChildContainer">
           <BackgroundImage
@@ -56,9 +78,98 @@ export default function WebsiteTemplate2() {
         </div>
       </div>
 
+      
+
       <div style={{ maxHeight: "50px" }}>
-        <BackgroundImage title="BUY SILVER COINS" />
+        <BackgroundImage title="BUY SILVER COINS ON EBAY" />
       </div>
+
+
+
+      
+
+      <div id="Container" class="Container">
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/qlAAAOSwP8Nlwo8T/s-l1600.jpg"
+            title="2024 $1 American Silver Eagle 1 oz BU"
+            description=""
+            link="https://ebay.us/7tmYCx"
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/XgIAAOSwDy5l~GZe/s-l1600.jpg"
+            title="1 oz Silver Round - Scottsdale Tombstone Hammered Silver Piece"
+            link="https://ebay.us/B8OOkW"
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/8fAAAOSwC7Jl6yfS/s-l1600.jpg"
+            title="Secondary Market - 1 oz Silver Bar 999 Fine Silver"
+            link="https://ebay.us/NFOstB"
+          />
+        </div>
+      </div>
+
+
+
+
+
+      <div id="Container" class="Container">
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/ieIAAOSwjtllwpYx/s-l1600.jpg"
+            title="1 Troy oz Dead Men Tell No Tales Design .999 Fine Silver Round"
+            description=""
+            link="https://ebay.us/IKatCW"
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/MNgAAOSwTfhlwpYx/s-l1600.jpg"
+            title="1 Troy oz Dead Men Tell No Tales Design .999 Fine Silver Round"
+            description=""
+            link="https://ebay.us/IKatCW"
+          />
+        </div>
+
+      </div>
+
+
+
+
+
+      <div id="Container" class="Container">
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src=""
+            title="Storage and Security:"
+            description="After purchasing silver from MichiganSilver.com, it's essential to consider storage and security options to protect your investment. MichiganSilver.com offers secure storage solutions for customers who prefer to store their precious metals off-site. With fully insured storage facilities and comprehensive security measures in place, MichiganSilver.com ensures the safety and integrity of your investment, providing you with peace of mind and accessibility when needed. Alternatively, if you prefer to store silver at home, MichiganSilver.com offers guidance on proper storage techniques and security measures to minimize risk and maximize protection."
+            link="#"
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src=""
+            title="Making a Purchase:"
+            description="Once you've selected the silver products that align with your investment objectives, making a purchase with MichiganSilver.com is a straightforward and secure process. We are paypal verified. You can browse their inventory online, add items to your cart, and proceed to checkout using your preferred payment method. MichiganSilver.com Uses Paypal payment options, including credit cards through paypal ensuring convenience and flexibility for customers. Additionally, Paypal prioritizes the safety and security of every transaction, employing encryption protocols and privacy measures to safeguard customer information and financial data ."
+            link="#"
+          />
+        </div>
+
+      </div>
+
+
+
+
+
+      
 
       <div id="Container" class="Container">
         <div id="ChildContainer" class="ChildContainer">
@@ -89,12 +200,14 @@ export default function WebsiteTemplate2() {
 
       <div id="Container" class="Container">
         <div id="ChildContainer" class="ChildContainer">
-          <BackgroundImage
-            src="https://www.valcambi.com/uploads/tx_isunicproductdatabase/CombiBar_Ag_1x100_Retro_800_new_01.jpg"
-            title="Ten 1 Gram Lot .999 Silver | Valcambi Suisse CombiBar | X 10 Barter Silver Bars"
-            description="VALCAMBI SILVER BARS"
-            link="https://www.ebay.com/itm/224591781336"
+          <TagCloud 
+            title="TAG CLOUD"
+            
+            
           />
+
+          <a href="#">Buy Silver in Flint</a>
+          
         </div>
 
         <div id="ChildContainer" class="ChildContainer">

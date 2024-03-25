@@ -2,7 +2,7 @@ export default function WalkingLiberty() {
   const id="WalkingLiberty";
   return(
     <div div id="text-container" class="text-container">
-      <a href="#"><h3>American US Silver Walking Liberty Half Dollar</h3></a>
+      <a href="#"><h3>Buy Walking Liberty's</h3></a>
       <p>
         The Walking Liberty Half Dollar is a coin that was minted in the United States from 1916 to 1947. The coin is known for its beautiful and intricate design, and it has become a symbol of American numismatic art. In this article, we will explore the historical significance of the Walking Liberty Half Dollar, including its history, design, and impact.
 

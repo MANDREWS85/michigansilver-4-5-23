@@ -19,8 +19,8 @@ export default function BackgroundImage({
         width: "100%",
         height: "100%",
         margin: "auto",
-        padding: "10px",
-        overflow: "hidden",
+        padding: "3px",
+        overflow: "wrap",
 
         backgroundSize: "100%",
       }}
