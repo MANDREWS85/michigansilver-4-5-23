@@ -7,9 +7,6 @@ import BuySilverBarsMichigan from "./BuySilverBarsMichigan.jsx";
 
 export default function FeaturedRoute() {
   const id="FeaturedRoute";
-  const product_1_title = ""
-  const product_1_image = "https://cdn.silverbene.com/media/catalog/product/cache/2dcc9e11cc18dd2938982cb3233783bd/lky/2022_3_10_18_18/651099277545/651099277545_4.jpg"
-  const product_1_link = "#" 
 
   
   return(
@@ -17,7 +14,12 @@ export default function FeaturedRoute() {
     <div id="text-container" class="text-container">
 
       <div style={{ maxHeight: "50px",align:"center",width:"100%",margin:"auto" }}>
-        <BackgroundImage title="FEATURED SILVER" />
+        <BackgroundImage 
+          title="FEATURED SILVER"
+          link = "http://michigansilver.com"
+          
+          
+        />
       </div>
     
       <div id="Container" class="Container">       

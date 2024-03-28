@@ -6,9 +6,6 @@ import BackgroundImage from "../components/BackgroundImage.jsx";
 
 export default function BuySilverBarsMichigan() {
   const id="BuySilverBarsMichigan";
-  const product_1_title = ""
-  const product_1_image = "https://cdn.silverbene.com/media/catalog/product/cache/2dcc9e11cc18dd2938982cb3233783bd/lky/2022_3_10_18_18/651099277545/651099277545_4.jpg"
-  const product_1_link = "#" 
 
   
   return(
@@ -16,7 +13,10 @@ export default function BuySilverBarsMichigan() {
     <div id="text-container" class="text-container">
 
       <div style={{ maxHeight: "50px",align:"center",width:"100%",margin:"auto" }}>
-        <BackgroundImage title="BUY SILVER BARS ON EBAY" />
+        <BackgroundImage 
+          title="BUY SILVER BARS ON EBAY" 
+          link = "http://michigansilver.com"
+        />
       </div>
 
       

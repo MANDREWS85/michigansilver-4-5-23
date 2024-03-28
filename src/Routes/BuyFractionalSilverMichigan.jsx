@@ -9,7 +9,7 @@ export default function BuyFractionalSilverMichigan() {
   const id="BuyFractionalSilverMichigan";
   const product_1_title = ""
   const product_1_image = "https://cdn.silverbene.com/media/catalog/product/cache/2dcc9e11cc18dd2938982cb3233783bd/lky/2022_3_10_18_18/651099277545/651099277545_4.jpg"
-  const product_1_link = "#" 
+  const product_1_link = "http://michigansilver.com" 
 
   
   return(
@@ -17,7 +17,10 @@ export default function BuyFractionalSilverMichigan() {
     <div id="text-container" class="text-container">
 
       <div style={{ maxHeight: "50px",align:"center",width:"100%",margin:"auto" }}>
-        <BackgroundImage title="BUY FRACTIONAL SILVER ON EBAY" />
+        <BackgroundImage 
+          link = "http://michigansilver.com"
+          title="BUY FRACTIONAL SILVER ON EBAY" 
+          />
       </div>
 
       

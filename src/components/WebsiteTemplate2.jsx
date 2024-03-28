@@ -84,7 +84,11 @@ export default function WebsiteTemplate2() {
       
 
       <div style={{ maxHeight: "50px" }}>
-        <BackgroundImage title="BUY SILVER COINS ON EBAY" />
+        <BackgroundImage 
+          title="BUY SILVER COINS ON EBAY" 
+          link = "http://michigansilver.com"
+          
+        />
       </div>
 
 
