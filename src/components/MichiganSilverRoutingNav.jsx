@@ -6,7 +6,10 @@ import MercuryDime from "../Routes/MercuryDime";
 import Walkingliberty from "../Routes/WalkingLiberty";
 import BuySilverFlint from "../Routes/BuySilverFlint";
 import BuySilverJewelryMichigan from "../Routes/BuySilverJewelryMichigan";
-
+import BuySilverCoinsMichigan from "../Routes/BuySilverCoinsMichigan";
+import BuySilverBarsMichigan from "../Routes/BuySilverBarsMichigan";
+import BuyFractionalSilverMichigan from "../Routes/BuyFractionalSilverMichigan";
+import FeaturedRoute from "../Routes/FeaturedRoute";
 
 export default function MichiganSilverRoutingNav() {
   const id="MichiganSilverRoutingNav";
@@ -15,7 +18,8 @@ export default function MichiganSilverRoutingNav() {
       <div id={id} class={id}>
         <div id="top-nav" class="top-nav">
           <div id="button" class="button"> <Link to="/"> HOME </Link> </div>
-          <div id="button" class="button"> <Link to="/"> SILVER BULLION </Link>  </div>
+          <div id="button" class="button"> <Link to="/featured"> FEATURED </Link> </div>
+          <div id="button" class="button"> <Link to="/buy-silver-coins-michigan"> SILVER BULLION </Link>  </div>
           <div id="button" class="button"> <Link to="/buy-silver-jewelry-michigan"> SILVER JEWELRY </Link> </div>
           <div id="button" class="button"> <Link to="/"> FRACTIONAL SILVER </Link> </div>
         </div>
@@ -82,7 +86,15 @@ export default function MichiganSilverRoutingNav() {
 
 
         <Route path="buy-silver-jewelry-michigan" element={<BuySilverJewelryMichigan />} />
+        <Route path="buy-silver-coins-michigan" element={<BuySilverCoinsMichigan />} />
+
+        <Route path="buy-silver-bars-michigan" element={<BuySilverBarsMichigan />} />
         
+        <Route path="buy-fractional-silver-michigan" element={<BuyFractionalSilverMichigan />} />
+
+        <Route path="featured" element={<FeaturedRoute />} />
+
+
         <Route path="buy-silver-michigan" element={<BuySilverFlint />} />
         <Route path="buy-silver-flint" element={<BuySilverFlint />} />
         <Route path="buy-silver-detroit" element={<About />} />

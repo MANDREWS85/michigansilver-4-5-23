@@ -8,6 +8,9 @@ import ScrollingText from "../components/ScrollingText.jsx";
 import Banner from "../components/Banner.jsx";
 import TagCloud from "../components/TagCloud.jsx";
 
+import FeaturedRoute from "../Routes/FeaturedRoute";
+
+
 export default function WebsiteTemplate2() {
   const id = "WebsiteTemplate2";
   return (
@@ -56,7 +59,7 @@ export default function WebsiteTemplate2() {
       </div>
 
 
-      
+      <FeaturedRoute />
       
       <div id="Container" class="Container">
         <div id="ChildContainer" class="ChildContainer">

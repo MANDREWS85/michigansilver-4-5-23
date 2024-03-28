@@ -14,6 +14,71 @@ export default function BuySilverJewelryMichigan() {
   return(
 
     <div id="text-container" class="text-container">
+
+      <div style={{ maxHeight: "50px",align:"center",width:"100%",margin:"auto" }}>
+        <BackgroundImage title="BUY SILVER COIN RING ON EBAY" />
+      </div>
+
+      <div id="Container" class="Container">
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/i4sAAOSwNkxdGpgr/s-l1600.jpg"
+            title="JFK HALF DOLLAR SILVER COIN RING 1965-1966-1967-1968-1969 SIZES 7-14"
+            description=""
+            link="https://ebay.us/YygmoJ"            
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/eLgAAOSw4GFbQq0L/s-l1600.jpg"
+            title="Coin Ring hand made from Morgan Silver Dollar in sizes 9 - 15"
+            description=""
+            link="https://ebay.us/nLfIaY"            
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/5mQAAOSwbhJhkFjE/s-l1600.jpg"
+            title="IN GOD WE TRUST BEN FRANKLIN Half Dollar SILVER coin ring sizes 7-14"
+            description=""
+            link="https://ebay.us/plYwBw"            
+          />
+        </div>
+
+      </div>
+
+      <div id="Container" class="Container">  
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/qAIAAOSwmvZZb8MV/s-l960.jpg"
+            title="Coin Ring hand made from Morgan Silver Dollar antique finish"
+            description=""
+            link="https://ebay.us/kKvuZv"            
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/GyQAAOSwekdk4TEe/s-l960.jpg"
+            title="1921 Morgan Silver Dollar Coin Ring sizes 9-14 (handmade) Candybule PC"
+            description=""
+            link="https://ebay.us/6cheeU"            
+          />
+        </div>
+
+        <div id="ChildContainer" class="ChildContainer">
+          <BackgroundImage
+            src="https://i.ebayimg.com/images/g/U6oAAOSw3ldjO7gu/s-l960.jpg"
+            title="2022 US silver eagle Coin Ring Made From .999 1 oz Silver Coin polished patina"
+            description=""
+            link="https://ebay.us/iaJRkl"            
+          />
+        </div>
+        
+      </div>
       
       <div id="Container" class="Container">       
         <div id="ChildContainer" class="ChildContainer">
